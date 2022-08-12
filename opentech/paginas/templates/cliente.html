@@ -1,0 +1,309 @@
+{% load static %}
+<HTML lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+		<link href = "{% static 'paginas/css/cliente.css'%}" rel = "stylesheet">
+	</head>
+	<body>
+		<main class="site-wrapper">
+				<div class="pt-table desktop-768">
+					<div class="pt-tablecell page-home relative" style="background-image: url({% static 'paginas/img/background.png'%}); <background-position: center; <background-size: cover;">
+					</div>
+				</div>
+				
+			<!-- MENU ou Nav bar -->
+			<header class="header">	
+			<input type="checkbox" id="active">
+			<label for="active" class="menu-btn"><i class=""></i></label>
+			<div class="wrapper">
+				<ul>
+					<li><a href="{% url 'index'%}" target=_blank rel="noopener noreferrer">Home</a></li>
+					<li><a href="{% url 'sobre'%}" target=_blank rel="noopener noreferrer">Sobre</a></li>
+					<li><a href="{% url 'servicos'%}" target=_blank rel="noopener noreferrer">Serviços</a></li>
+					<li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Clientes</a></li>
+					<li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Parceiros</a></li>
+					<li><a href="{% url 'vagas'%}" target=_blank rel="noopener noreferrer">Carreira</a></li>
+					<li><a href="{% url 'login'%}" target=_blank rel="noopener noreferrer">Login</a></li>
+				</ul>
+			</div>
+				
+			<!-- MENU ou Nav bar -->
+				
+			<!-- Conteudo -->
+			<div class = "logo">
+				<img src="{% static 'paginas/img/Logo.png'%}">
+			</div>
+			
+			<!-- Carousel Cliente -->
+			<div class = "clientes">
+			<h1 class = "titulo-cliente"> Clientes</h1>
+				<section class="carousel" aria-label="Gallery">
+					<ol class="carousel__viewport">
+						<li id="carousel__slide1" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper">
+								<a href="#carousel__slide28" class="carousel__prev">Go to last slide</a>
+								<a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide2" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide3" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide4" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide5" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide5" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper">
+								<a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+								<a href="#carousel__slide6" class="carousel__next">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide6" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide7" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide7" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide8" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide8" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide7" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide9" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide9" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper">
+								<a href="#carousel__slide8" class="carousel__prev">Go to last slide</a>
+								<a href="#carousel__slide10" class="carousel__next">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide10" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide9" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide11" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide11" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide10" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide12" class="carousel__next">Go to next slide</a>
+						</li>
+						<li id="carousel__slide12" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide11" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide13" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide13" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide12" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide14" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide14" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide13" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide15" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide15" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide14" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide16" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide16" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide15" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide17" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide17" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide16" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide18" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide18" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide17" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide19" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide19" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide18" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide20" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide20" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide19" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide21" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide21" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide20" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide22" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide22" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide21" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide23" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide23" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide22" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide24" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide24" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide23" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide25" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide25" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide24" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide26" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide26" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide25" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide27" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide27" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide26" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide28" class="carousel__next">Go to first slide</a>
+						</li>
+						<li id="carousel__slide28" tabindex="0" class="carousel__slide">
+							<div class="carousel__snapper"></div>
+							<a href="#carousel__slide27" class="carousel__prev">Go to previous slide</a>
+							<a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+						</li>
+					</ol>
+				</section>				
+			</div>
+			<!-- Carousel de Parceiros -->
+			<div class = "parceiros">
+				<h1 class = "titulo-parceiro"> Parceiros </h1>
+				<section class="carousel2" aria-label="Gallery">
+					<ol class="carousel__viewport">
+						<li id="carousel__slide1_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2">
+								<a href="#carousel__slide11_parceiros" class="carousel__prev2_parceiros">Go to last slide</a>
+								<a href="#carousel__slide2_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide2_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide1_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide3_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+						<li id="carousel__slide3_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide2_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide4_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+						<li id="carousel__slide4_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide3_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide5_parceiros" class="carousel__next2_parceiros">Go to first slide</a>
+						</li>
+						<li id="carousel__slide5_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2">
+								<a href="#carousel__slide4_parceiros" class="carousel__prev2_parceiros">Go to last slide</a>
+								<a href="#carousel__slide6_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide6_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide5_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide7_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+						<li id="carousel__slide7_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide6_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide8_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+						<li id="carousel__slide8_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide7_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide9_parceiros" class="carousel__next2_parceiros">Go to first slide</a>
+						</li>
+						<li id="carousel__slide9_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2">
+								<a href="#carousel__slide8_parceiros" class="carousel__prev2_parceiros">Go to last slide</a>
+								<a href="#carousel__slide10_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+							</div>
+						</li>
+						<li id="carousel__slide10_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide9_parceiros" class="carousel__prev2_parceiros">Go to previous slide</a>
+							<a href="#carousel__slide11_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+						<li id="carousel__slide11_parceiros" tabindex="0" class="carousel__slide2">
+							<div class="carousel__snapper2"></div>
+							<a href="#carousel__slide10_parceiros" class="carousel__prev2_parceiros"> Go to previous slide</a>
+							<a href="#carousel__slide1_parceiros" class="carousel__next2_parceiros">Go to next slide</a>
+						</li>
+					</ol>
+				</section>
+			</div>
+			<!-- FOOTER -->	
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<h5><i class="fa fa-road"></i> Opentech</h5>
+							<div class="row">
+								<div class="col-6">
+									<ul class="list-unstyled">
+										<li><a href="{% url 'sobre'%}">Sobre</a></li>
+										<li><a href="{% url 'servicos'%}">Serviços</a></li>
+										<li><a href="{% url 'cliente'%}">Clientes</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="list-unstyled">
+										<li><a href="{% url 'cliente'%}">Parceiros</a></li>
+										<li><a href="{% url 'vagas'%}">Trabalhe Conosco</a></li>
+									</ul>
+								</div>
+							</div>
+							<ul class="nav">
+								<li class="nav-item"><a href="https://br.linkedin.com/company/opentech" class="nav-link pl-0"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+							<br>
+						</div>
+						<div class="col-md-2">
+							<h5 class="text-md-right">Entre em contato:</h5>
+							<hr>
+						</div>
+						<div class="col-md-5">
+							<form>
+								<fieldset class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								</fieldset>
+								<fieldset class="form-group">
+									<textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+								</fieldset>
+								<fieldset class="form-group text-xs-right">
+									<button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- FOOTER -->
+		</main>
+	</body>
+</html>

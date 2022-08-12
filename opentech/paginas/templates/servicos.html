@@ -1,0 +1,121 @@
+<!DOCTYPE>
+{% load static %}
+<HTML lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+		<link href = "{% static 'paginas/css/servicos.css'%}" rel="stylesheet">
+	</head>
+	<body>
+		<main class="site-wrapper">
+				<div class="pt-table desktop-768">
+					<div class="pt-tablecell page-home relative" style="background-image: url({% static 'paginas/img/background.png'%}); <background-position: center; <background-size: cover;">
+					</div>
+				</div>
+			<!-- MENU ou Nav bar -->
+				<header class="header">	
+					<input type="checkbox" id="active">
+					<label for="active" class="menu-btn"><i class=""></i></label>
+				<div class="wrapper">
+					<ul>
+						<li><a href="{% url 'index'%}" target=_blank rel="noopener noreferrer">Home</a></li>
+					<li><a href="{% url 'sobre'%}" target=_blank rel="noopener noreferrer">Sobre</a></li>
+					<li><a href="{% url 'servicos'%}" target=_blank rel="noopener noreferrer">Serviços</a></li>
+					<li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Clientes</a></li>
+					<li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Parceiros</a></li>
+					<li><a href="{% url 'vagas'%}" target=_blank rel="noopener noreferrer">Carreira</a></li>
+					<li><a href="{% url 'login'%}" target=_blank rel="noopener noreferrer">Login</a></li>
+					</ul>
+				</div>
+			<!-- Conteudo -->
+			<div class = "logo">
+				<img src="{% static 'paginas/img/Logo.png'%}">
+			</div>
+			<div class = "sc" >
+				<h1> Soluções Customizadas </h1>
+				<p> A OpenTech trabalha com tecnologia de ponta e emprega o best-of-breed do mercado em todas as suas soluções de gerenciamento. </p>
+				<p> Atuando à frente de um segmento altamente dinâmico e em constante evolução, a empresa também se especializou em criar soluções customizadas para seus clientes, <br>atendendo as necessidades mais específicas com inteligência e eficiência. </p><br>
+				<h1>Beneficios de contar com a OpenTech</h1>
+				<dl class = "listbeneficios">
+					<dt>Escopo</dt>
+					<dd>Abrangente e flexível frente a realidade dos processos e nível de maturidade de cada cliente.</dd>
+					<dt>Adaptabilidade</dt>
+					<dd>Montar equipe de acordo com as necessidades do cliente.</dd>
+					<dt>Smart Fit</dt>
+					<dd>Flexibilidade e extensibilidade do expertise da equipe de acordo com as necessidades do ambiente do cliente.</dd>
+					<dt>Custo</dt>
+					<dd>Com os preços competitivos dentro do mercado e adequado as demandas 24 x 7, com sobreaviso e atendimento de problemas específicos On/Off site.</dd>
+					<dt>Gerenciabilidade</dt>
+					<dd>Relatórios Gerenciais para manter os níveis de gerencia e decisão envolvidos Informados e atualizados</dd>
+				</dl>
+			</div>
+			<div class = "proposta" id = "area">
+				<form id = "formulario" autocomplete = "off">
+					<fieldset>
+						<legend> Orçamento </legend>
+						<label> Nome: </label><input class="campo_nome" type="text" required name=nome><br>
+						<label> Email: </label><input class="campo_email" type="email" required name="email"><br>
+						<label> Selecione a área desejada: 
+							<select>
+								<option value = ""></option>
+								<option value = "dev"> Desenvolvimento </option>
+								<option value = "sec"> Segunraça da Informação </option>
+								<option value = "backup"> Backup </option>
+								<option value = "storage"> Storage </option>
+								<option value = "bigdata"> Big Data </option>
+								<option value = "devops"> DevOps </option>
+								<!--<option value = "">  </option>
+								<option value = "">  </option>
+								<option value = "">  </option> -->
+							</select>
+						</label>
+						<br>
+						<label> Descreva um pouco sobre o que espera:
+							<textarea class="msg" cols="35" rows="8"></textarea>
+							<input class="btn_submit" type="submit" value="Enviar">
+							<form method="post" action="mailto:felipepgarro@ot.com.br"></form>
+						</label>
+					</fieldset>
+				</form>
+			</div>
+			<!-- Conteudo -->
+			
+			<!-- FOOTER -->	
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<h5><i class="fa fa-road"></i> Opentech</h5>
+							<div class="row">
+								<div class="col-6">
+									<ul class="list-unstyled">
+										<li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\sobre.html">Sobre</a></li>
+										<li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\servicos.html">Serviços</a></li>
+										<li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\cliente.html">Clientes</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="list-unstyled">
+										</li><li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\contato.html">Contato</a></li>
+										<li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\parceiros.html">Parceiros</a></li>
+										<li><a href="C:\Users\Opentech_Ps\Desktop\teste\Ex2\pages\vagas.html">Trabalhe Conosco</a></li>
+									</ul>
+								</div>
+							</div>
+							<ul class="nav">
+								<li class="nav-item"><a href="https://br.linkedin.com/company/opentech" class="nav-link pl-0"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+							<br>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- FOOTER -->
+		</main>
+	</body>
+</html>
