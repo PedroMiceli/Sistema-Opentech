@@ -10,5 +10,4 @@ urlpatterns = [
     path('servicos', views.servicos, name='servicos'),
     path('sobre', views.sobre, name='sobre'),
     path('vagas', views.vagas, name='vagas'),
-
 ]
