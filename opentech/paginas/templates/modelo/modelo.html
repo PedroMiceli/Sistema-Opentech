@@ -1,93 +1,137 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
-          rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"/>
-        {% block css %}
-        <link href="{% static 'paginas/css/index.css'%}" rel="stylesheet">
-
-        {% endblock %}
-
+    <link rel="stylesheet" href="{% static 'paginas/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'paginas/css/modelo.css' %}">
+    <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
-
-
-<div>
-    {% block conteudo %}
-    <div class="pt-table desktop-768">
-        <div class="pt-tablecell page-home relative"
-             style="background-image: url({% static 'paginas/img/background.png'%}); <background-position: center; <background-size: cover;">
-        </div>
-    </div>
-
-
-    {% endblock %}
-</div>
-
-{% block rodape %}
-<footer class="footer">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h5><i class="fa fa-road"></i> Opentech</h5>
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li><a href="{% url 'sobre'%}" target=_blank rel="noopener noreferrer">Sobre</a></li>
-                            <li><a href="{% url 'servicos'%}" target=_blank rel="noopener noreferrer">Serviços</a></li>
-                            <li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Clientes</a></li>
+        <a class="navbar-brand" href="#">Opentech</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
 
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li><a href="{% url 'localizacao'%}" target=_blank rel="noopener noreferrer">Contato</a>
-                            </li>
-                            <li><a href="{% url 'cliente'%}" target=_blank rel="noopener noreferrer">Parceiros</a></li>
-                            <li><a href="{% url 'vagas'%}" target=_blank rel="noopener noreferrer">Trabalhe Conosco</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="nav">
-                    <li class="nav-item"><a href="https://br.linkedin.com/company/opentech" target=_blank
-                                            rel="noopener noreferrer" class="nav-link pl-0"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-                <br>
-            </div>
-            <div class="col-md-2">
-                <h5 class="text-md-right">Entre em contato:</h5>
-                <hr>
-            </div>
-            <div class="col-md-5">
-                <form>
-                    <fieldset class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                    </fieldset>
-                    <fieldset class="form-group text-xs-right">
-                        <button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
-                    </fieldset>
-                </form>
-            </div>
+            </ul>
         </div>
     </div>
+</nav>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer text-center text-lg-start bg-white text-muted mb-0">
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-grayish"></i>Opentech
+                    </h6>
+                    <p>
+                        Aqui ficara a missão visão e valores da empresa--Aqui ficara a missão visão e valores da
+                        empresa--Aqui ficara a missão visão e valores da empresa--.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Produtos
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Produtos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Produtos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Produtos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Produtos</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Link Util
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Link Util</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Link Util</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Link Util</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Link Util</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Endereço</h6>
+                    <p><i class="fas fa-home me-3 text-grayish"></i> Rua Dr Alfredo de Castro, 200, Barra funda, São
+                        Paulo-SP</p>
+                    <p>
+                        <i class="fas fa-envelope me-3 text-grayish"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-grayish"></i> (11) 99999-9999 </p>
+                    <p><i class="fas fa-print me-3 text-grayish"></i> (11) 99999-9999</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(47, 35, 41, 0.025);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">link para redirecionar util</a>
+    </div>
+    <!-- Copyright -->
 </footer>
-{% endblock %}
 
-
+</body>
 </html>
