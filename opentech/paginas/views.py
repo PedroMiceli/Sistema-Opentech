@@ -11,9 +11,6 @@ def cliente(request):
 def localizacao(request):
     return render(request, 'localizacao.html')
 
-def login(request):
-    return render(request, 'login.html')
-
 def servicos(request):
     return render(request, 'servicos.html')
 
