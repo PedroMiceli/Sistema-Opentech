@@ -1,26 +1,24 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
-from django.contrib import messages
+from django.shortcuts import render
+from django.http.response import HttpResponse
+from django.contrib.auth.models import User
 
 
 # Create your views here.
 
 def login_user(request):
-
-    if request.method == 'POST':
-        username = request.POST['username']
-        senha = request.POST['senha']
-        user = authenticate(request, username=username, senha=senha)
-        if user is not None:
-            login(request, user)
-            return redirect('home')
-        else:
-            messages.success(request, ("sai daqui malandro"))
-            return redirect('login')
+    if request.method == "GET":
+        return render(request, 'login.html')
     else:
-        return render(request, 'autenticate/login.html', {})
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        senha = request.POST.get('senha')
+        user = User.objects.filter(username=username).first()
+
+        if user:
+            return HttpResponse('Já existe um usuario com este username.')
+
+        return HttpResponse(username)
 
 
-
-def home_sistema(request):
-    return render(request, 'templates/home_sistema.html')
+def cadastro_user(request):
+    return render(request, 'cadastro.html')
