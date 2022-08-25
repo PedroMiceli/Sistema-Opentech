@@ -11,10 +11,12 @@
     margin-top:10px;
 }
 .sobre p{
-    padding-right: 45%;
-    padding-left: 45%;
+    padding-right: 40%;
+    padding-left: 30%;
 }
 .sobre img {
+    padding-right: 45%;
+    padding-left: 55%;
 }
 .perfil{
     background-color: #fbfbfd;
