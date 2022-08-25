@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http.response import HttpResponse
 from django.contrib.auth.models import User
-
-
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 # Create your views here.
 
 def login_user(request):
@@ -10,15 +11,37 @@ def login_user(request):
         return render(request, 'login.html')
     else:
         username = request.POST.get('username')
-        email = request.POST.get('email')
         senha = request.POST.get('senha')
-        user = User.objects.filter(username=username).first()
+        user = authenticate(username=username, password=senha)
 
         if user:
-            return HttpResponse('Já existe um usuario com este username.')
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.success(request, 'Usuario ou senha invalida!!!')
+            return redirect('login')
 
-        return HttpResponse(username)
+
 
 
 def cadastro_user(request):
-    return render(request, 'cadastro.html')
+    if request.method == "GET":
+        return render(request, 'cadastro.html')
+    else:
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        senha = request.POST.get('senha')
+
+        user = User.objects.filter(username=username).first()
+        if user:
+            return HttpResponse('Já existe um usuário com este nome')
+        else:
+            usuario = User.objects.create_user(username=username, email=email, password=senha)
+            usuario.save()
+            return redirect('login')
+
+
+@login_required(login_url='login')
+def home(request):
+    if request.user.is_authenticated:
+        return HttpResponse('plataforma')
