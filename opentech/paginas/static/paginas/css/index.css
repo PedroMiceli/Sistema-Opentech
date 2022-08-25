@@ -1,37 +1,47 @@
-.titulo{
+.sobre{
+    background-color: #fbfbfd;
     text-align: center;
-    margin-top:35px;
-    margin-bottom:35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
-
-.sec1{
+.areaImagem{
+    float:left;
+    margin-top:10px;
+}
+.sobre p{
+    padding-right: 45%;
+    padding-left: 45%;
+}
+.sobre img {
+}
+.perfil{
     background-color: #fbfbfd;
-    max-height: 80%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.primeiro_quadro{
-    margin-left: 20%;
-    text-align: left;
+.perfil p{
+    padding-right: 45%;
+    padding-left: 45%;
+}
+.perfil ul{
+    padding-right: 45%;
+    padding-left: 45%;
 }
 
-
-.sec2 {
-
+.equipe {
     background-color: #fbfbfd;
-    height: 60%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.segundo_quadro{
-    margin-left: 20%;
-    text-align: left;
-}
-
-
-.sec3 {
-
-    background-color: #fbfbfd;
-    height: 60%;
-}
-.terceiro_quadro{
-    margin-left: 20%;
-    text-align: left;
+.equipe p{
+    padding-right: 45%;
+    padding-left: 45%;
 }

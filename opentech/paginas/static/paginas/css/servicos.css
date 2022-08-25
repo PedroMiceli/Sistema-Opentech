@@ -1,0 +1,22 @@
+.titulo{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.sec1{
+    background-color: #fbfbfd;
+    max-height: 80%;
+}
+.primeiro_quadro{
+    text-align: center;
+}
+
+.sec2 {
+
+    background-color: #fbfbfd;
+    height: 60%;
+}
+.segundo_quadro{
+    margin-left: 20%;
+    text-align: left;
+}
