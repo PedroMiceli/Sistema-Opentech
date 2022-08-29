@@ -1,49 +1,35 @@
-.sobre{
+/*
+    Bloco 1
+*/
+
+
+
+/*
+    Bloco 2
+*/
+
+.bloco2{
     background-color: #fbfbfd;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.areaImagem{
-    float:left;
-    margin-top:10px;
-}
-.sobre p{
-    padding-right: 40%;
-    padding-left: 30%;
-}
-.sobre img {
-    padding-right: 45%;
-    padding-left: 55%;
-}
-.perfil{
-    background-color: #fbfbfd;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.perfil p{
-    padding-right: 45%;
-    padding-left: 45%;
-}
-.perfil ul{
-    padding-right: 45%;
-    padding-left: 45%;
+    display: flex;
 }
 
-.equipe {
-    background-color: #fbfbfd;
+.perfil{
     text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
-.equipe p{
-    padding-right: 45%;
-    padding-left: 45%;
+.p-perfil{
+    font-weight: bold;
+}
+.equipe{
+    text-align: center;
+}
+.p-equipe{
+    font-weight: bold;
+}
+/*
+    BLOCO 3
+*/
+.areaImagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

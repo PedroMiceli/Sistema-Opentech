@@ -1,26 +1,19 @@
 {% extends 'modelo/modelo.html' %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'paginas/css/localizacao.css' %}">
+{% endblock %}
+
 {% block js %}
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<link rel="script" href="{% static 'paginas/css/localizacao.js' %}">
 {% endblock %}
 {% block title %}Localização{% endblock %}
 
 {% block content %}
-
-
-<h1>My First Google Map</h1>
-
-<div id="googleMap" style="width:70%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-
-
+<h1> Localização da OpenTech </h1>
+<div class = "map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.115800666874!2d-46.66589688535681!3d-23.528337066257887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5804e6f27dcb%3A0x963a5fce9a0b9093!2sR.%20Dr.%20Alfredo%20de%20Castro%2C%20200%20-%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001155-060!5e0!3m2!1spt-BR!2sbr!4v1661790514668!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 {% endblock %}
