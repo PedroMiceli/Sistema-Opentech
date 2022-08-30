@@ -1,7 +1,38 @@
 {% extends 'modelo/modelo.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'paginas/css/sobre.css' %}">
+{% endblock %}
+
+{% block js %}
+<link rel="script" href="{% static 'paginas/css/' %}">
+{% endblock %}
 
 {% block title %}Sobre nós{% endblock %}
 
 {% block content %}
-<h1>Teste no sobre</h1>
+<br>
+<div class = "sobre">
+    <div class = "titulo">
+        <h1> Afinal quem é a Opentech? </h1><br>
+        <p> Fundada em 1997 por um grupo de consultores de TI (Indústria financeira) e Telecom (Embratel), há mais de duas décadas a OpenTech vem atuando com destaque em projetos, implementação, e sustentação de sistemas corporativos e seus componentes de infraestrutura e software. Ao longo do tempo a OpenTech se destacou como parceiro de serviços e integração de soluções e sistemas corporativos complexos, conquistando a credibilidade e a confiança de grandes empresas no Brasil e no exterior. </p>
+        <p> Hoje a OpenTech conta com uma equipe formada por dezenas de profissionais especialistas, distribuídos entre profissionais de serviços de implementação, sustentação, serviço residente, arquitetos e gestores de projeto.  Durante sua trajetória, a OpenTech acumulou uma série de cases de sucesso, onde criou e implementou soluções de mercado e soluções custom inovadoras, proporcionando maior competitividade, eficiência operacional e redução de custos através de soluções voltadas  necessidade de clientes e parceiros tecnológicos. </p>
+        <img src = "..\static\paginas\img\Logo.png" alt = "">
+    </div>
+
+    <div class = "beneficio">
+        <h2> Por que contar com a Opentech? </h2><br>
+        <p> <font color="red" size = +2>Adaptabilidade</font> , <font color="blue" size = +2>Smart Fit</font>, <font color="darkyellow" size = +2>Escopo</font>, <font color="darkred" size = +2>Gerenciabilidade</font> e é claro o melhor <font color="darkblue" size = +2>Custo</font> para a sua empresa! </p>
+        <p> Com os anos de experiencia na área, nossa equipe consegue analisar, preparar e se adaptar nas melhores soluções para os desafios da sua empresa. </p>
+        <p>  </p><br>
+
+    </div>
+
+    <div class = "bora">
+        <h2> Bora contar com a Opentech? </h2><br>
+        <form action="">
+            <button type = "submit" class = "button"> BIRL </button>
+    </div>
+</div>
 {% endblock %}

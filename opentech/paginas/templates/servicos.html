@@ -1,4 +1,14 @@
 {% extends 'modelo/modelo.html' %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'paginas/css/servico.css' %}">
+{% endblock %}
+
+{% block js %}
+<link rel="script" href="{% static 'paginas/css/.js' %}">
+{% endblock %}
 
 {% block title %}Serviços{% endblock %}
 
