@@ -71,6 +71,21 @@
 }
 
 /*
+    BLOCO 4
+*/
+
+.bloco4{
+    background-color: #fbfbfd;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+.cliente img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
+/*
     Animação
 */
 
@@ -81,7 +96,7 @@
     to {
       opacity: 1;
     }
-  }
+}
 
 @keyframes fadeInRight {
     from {
@@ -91,9 +106,9 @@
     to {
       opacity: 1;
     }
-  }
+}
 
-  @keyframes fadeInLeft {
+@keyframes fadeInLeft {
     from {
       opacity: 0;
       transform: translateX(-300px);
@@ -101,4 +116,4 @@
     to {
       opacity: 1;
     }
-  }
+}

@@ -1,15 +1,111 @@
 .start {
     background-color: #fbfbfd;
+}
+.titulo{
+    text-align: center;
+}
+.um{
+    text-align: center;
+    font-weight: bold;
+}
+.b1{
+    display: flex;
+    float: none;
+    top: 0;
+    left: 0;
+    width: auto;
+    position: relative;
+    height: auto;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    padding-right: 100px;
+    min-width: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.b1 p{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    padding-right: 100px;
+}
+.b2{
+    display: flex;
+    float: none;
+    top: 0;
+    left: 0;
+    width: auto;
+    position: relative;
+    height: auto;
+    padding-top: 30px;
+    padding-left: 320px;
+    padding-bottom: 80px;
+    max-width: 100%;
+    padding-right: 40px;
+    min-width: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.b2 p{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    padding-right: 100px;
+}
+
+.b3{
+    display: flex;
+    float: none;
+    top: 0;
+    left: 0;
+    width: auto;
+    position: relative;
+    height: auto;
+    padding-top: 30px;
+    padding-left: 320px;
+    padding-bottom: 80px;
+    max-width: 100%;
+    padding-right: 40px;
+    min-width: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.b3 p{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    padding-right: 100px;
+}
+.areas{
     text-align: center;
 }
 
-
-
-.how{
-
+.proposta{
+    text-align: center;
 }
-
-
-.areas {
-    
+.campo{
+    margin-bottom: 225px;
+    margin: 0 auto;
+    width: 50%;
+    left: 10px;
+    top: 23px;
+    width: 600px;
+    display: block;
+}
+label{
+    font-style: bold;
 }
