@@ -3,10 +3,12 @@
 }
 .titulo{
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 .um{
     text-align: center;
     font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
 }
 .b1{
     display: flex;
@@ -27,7 +29,12 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
+    animation: fadeInLeft 2s ease-in-out;
 }
+.levantamento-b1{
+    display: flex;
+}
+
 .b1 p{
     padding-top: 30px;
     padding-left: 100px;
@@ -44,16 +51,17 @@
     position: relative;
     height: auto;
     padding-top: 30px;
-    padding-left: 320px;
-    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-bottom: 30px;
     max-width: 100%;
-    padding-right: 40px;
+    padding-right: 100px;
     min-width: 0;
     text-align: center;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
+    animation: fadeInRight 2s ease-in-out;
 }
 .b2 p{
     padding-top: 30px;
@@ -72,16 +80,17 @@
     position: relative;
     height: auto;
     padding-top: 30px;
-    padding-left: 320px;
-    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-bottom: 30px;
     max-width: 100%;
-    padding-right: 40px;
+    padding-right: 100px;
     min-width: 0;
     text-align: center;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
+    animation: fadeInLeft 2s ease-in-out;
 }
 .b3 p{
     padding-top: 30px;
@@ -90,14 +99,18 @@
     max-width: 100%;
     padding-right: 100px;
 }
+
 .areas{
+    background-color: #fbfbfd;
     text-align: center;
 }
 
 .proposta{
+    background-color: #fbfbfd;
     text-align: center;
 }
 .campo{
+    background-color: #fbfbfd;
     margin-bottom: 225px;
     margin: 0 auto;
     width: 50%;
@@ -108,4 +121,37 @@
 }
 label{
     font-style: bold;
+}
+
+/*
+    Animação
+*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+    }
 }

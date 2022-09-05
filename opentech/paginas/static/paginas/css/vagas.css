@@ -1,0 +1,18 @@
+.pdf {
+    text-align: center;
+    background-color: #fbfbfd;
+}
+.campo{
+    text-align: center;
+    background-color: #fbfbfd;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    background-color: #fbfbfd;
+}
+h2{
+    background-color: #fbfbfd;
+    text-align: center;
+}

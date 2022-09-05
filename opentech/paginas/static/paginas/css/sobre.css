@@ -5,6 +5,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.titulo {
+    animation: fadeInLeft 2s ease-in-out;
+}
 
 .titulo p {
     padding-right: 100px;
@@ -13,10 +16,12 @@
 
 .beneficio{
     background-color: #fbfbfd;
+    animation: fadeInRight 2s ease-in-out;
 }
 
 .bora {
     background-color: #fbfbfd;
+    animation: fadeInRight 2s ease-in-out;
 }
 
 .button {
@@ -49,4 +54,37 @@
  .button:active {
     border-top-color: #1b435e;
     background: #1b435e;
+}
+
+/*
+    Animação
+*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+    }
 }
